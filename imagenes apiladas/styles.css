@@ -39,6 +39,7 @@ body{
     box-shadow: 0 0 10px 17px;
     transition: box-shadow 0.32s ease-in-out, top 0.32s ease-in-out;
 }
+
 .imagenes_container .imagen:hover .shadow{
     box-shadow: 0 0 13px 18px;
     top: 90px;
