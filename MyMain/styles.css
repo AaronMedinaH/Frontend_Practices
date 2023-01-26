@@ -1,0 +1,74 @@
+.Body_style{
+    background-color:coral;
+}
+
+/*-------------------------------ESTILOS PARA CREAR EL TOOLTIP-------------------------*/
+.paragraph{
+    font-size: 2rem;
+    color: darkred;
+}
+
+.tooltip{
+    position: relative;
+    border-bottom: 1px solid black;
+}
+
+.tooltip:before{
+    content: attr(mensaje);
+    position:absolute ;
+    bottom:120%;
+    left: 0;
+    width: max-content;
+    max-width: 160px;
+    background-color: #c9002b;
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 5px;
+
+    font-size: .8rem;
+    pointer-events: none;
+    transition: opacity .3s;
+
+    z-index: 10;
+    opacity: 0;
+}
+
+.tooltip:hover::before{
+    opacity: 1;
+}
+/*-------------------ESTILOS PARA LA TABLA INICIAL CON LOS PROCESADORES-----------------------*/
+table, th, td {
+    border: 2.5px solid black;
+    text-align: center;
+}
+.edited{
+    border-color: aqua;
+    font: 500;
+}
+table{
+    width: 300px;
+}
+
+/*PSEUDICLASES Y PSEUDOELEMENTOS*/
+
+.pc1{
+    font-size: larger;
+    font-style:inherit;
+    color: papayawhip;
+}
+
+.pc1::first-letter{
+    color: rgb(187, 0, 0);
+}
+
+.pc1:hover{
+    color:red;
+}
+
+/*La pseudo-clase :nth-child() de CSS coincide con uno o más elementos en función de su posición entre un grupo de hermanos.*/
+section .pc1:nth-child(2):hover{
+    color:blue;
+}
+

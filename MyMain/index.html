@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first web page</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body class="Body_style">
+    <table>
+        <!--thead REPRESENTA UNA SECCIÓN DE ENCABEZADO DE LA TABLA-->
+        <thead>
+            <!--tr SIGNIFICA TABLE ROW (FILA DE TABLA)-->
+            <tr>
+                <!--th SIGNIFICA TABLE HEADER (CABECERA DE TABLA)-->
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <!--tbody REPRESENTA LA SECCIÓN DE CUERPO DE UNA TABLA-->
+        <body>
+            <tr>
+                <!--td SIGNIFICA TABLE DATA (CELDA DE DATOS DE TABLA)-->
+                <td>Intel Core i9 11900K</td>
+                <td>$449</td>
+            </tr>
+            <tr>
+                <td>AMD Ryzen 5 5600G</td>
+                <td>$223</td>
+            </tr>
+            <tr>
+                <td>Intel Core i5 11400F</td>
+                <td>$139</td>
+            </tr>
+        </body>
+        <tfoot>
+            <td></td>
+            <td>Total: $811</td>
+        </tfoot>
+    </table>
+    <!--ul ES LISTA NO ORDENADA-->
+    <!--ol ES LISTA NO ORDENADA-->
+    <ol>
+        <li value="50">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>
+            <ol>
+                <li style="list-style-type:lower-roman;">sub elemento 1</li>
+                <li style="list-style-type:lower-roman;">sub elemento 2</li>
+                <li style="list-style-type:lower-roman;">sub elemento 3</li>
+            </ol>
+        </li>
+    </ol>
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+    <form action="/formulario" method="GET">
+        <label for="nombre">Nombre</label>
+        <input class="edited" value="Aarón" type="text" id="nombre" name="nombre" placeholder="Nombre">
+        <br> <br>
+        <label for="apellido">Apellido</label>
+        <input value="Medina" type="text" name="apellido" id="apellido" placeholder="Apellido">
+        <br> <br>
+        <label for="comentarios">Comentarios:</label> <br>
+        <textarea name="comentario" id="comentarios" cols="50" rows="10" placeholder="Comentarios...">Las textarea obtienen su valor por defecto, por medio de los brackets del objeto</textarea>
+        <br>
+        <button type="button"><img src="./img/wallpapersden.com_red-sun_1920x1080.jpg" height="100"> Tipo botón</button>
+        <button type="reset">Tipo reset</button>
+        <button type="submit">Tipo submit</button>
+    </form>
+    <h1>My first heading</h1>
+    <h2>My second heading</h2>
+    <h3>My third heading</h3>
+    <h4>My fourth heading</h4>
+    <h5>My fifth heading</h5>
+    <h6>My sixth heading</h6>
+    <p>Esta es una etiqueta de párrafo</p>
+    <p>Para continuar en otra línea es necesario otro párrafo</p>
+<hr>
+    <h2>Texto de ejemplo</h2>
+    <p>Este texto es <span style="color:violet">mucho más largo</span>
+        y es para mostrar <br><br>
+        la etiqueta de span!
+    </p>
+    <!-- Este es un comentario y no va a
+    aparecer en el explorador-->
+    <a target="_blank" href="https://www.google.com.mx">ir a Google.com</a> <br>
+    <img src="img/wallpapersden.com_red-sun_1920x1080.jpg" height="400"/>
+
+</body>
+</html>
