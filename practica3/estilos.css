@@ -9,5 +9,5 @@
 }
 .search_bar:focus-within {
   border:solid 1px #aaa;
-  box-shadow: 2px 2px 3px rgba(red, green, blue, alpha);
+  box-shadow: 2px 2px 3px rgba(red, green, blue, 0.3);
 }
