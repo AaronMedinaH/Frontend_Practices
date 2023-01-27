@@ -1,3 +1,7 @@
+body{
+  font-family:sans-serif;
+
+}
 .search_bar {
   border: solid 1px #ccc;
   border-radius: 30px;
@@ -16,6 +20,20 @@
   outline: none;
   pad: 10px;
   font-size: 18px;
-  
+  flex: auto;
+}
 
+.search_bar .actions{
+  display: flex;
+  gap: 5px;
+}
+.search_bar .actions button{
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  color: #bbb;
+}
+.search_bar .actions button:hover{
+  color: rgb(0, 81, 255);
 }
