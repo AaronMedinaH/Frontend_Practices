@@ -9,5 +9,12 @@
 }
 .search_bar:focus-within {
   border:solid 1px #aaa;
-  box-shadow: 2px 2px 3px rgba(red, green, blue, 0.3);
+  box-shadow: 2px 2px 3px rgb(53, 6, 129, 0.3);
+}
+.search_bar input{
+  border:none;
+  outline: none;
+  pad: 10px;
+  font-size: 18px;
+    
 }
